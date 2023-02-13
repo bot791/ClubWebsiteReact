@@ -9,7 +9,8 @@ const About = () => {
         We belive everyone should respect the game of football.
       </p>
       <h1>MÁS QUE LOBOS HABILES EN UN CLUB</h1>
-      <div><img src="/clublogo.png" alt="clublogo" style={{height:"250px",width:"250px"}}/>
+      
+      <div><img src="/clublogo.png" alt="clublogo" />
       <h1 style={{color:"chocolate",textShadow:"2px 2px 4px grey"}}>This is the club logo</h1>
       </div>
     </div>
