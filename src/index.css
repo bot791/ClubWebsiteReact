@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Jura:wght@300&display=swap");
 .navbar {
   display: flex;
   margin-left: auto;
   justify-content: space-between;
   align-items: center;
-  background-color: darkgray;
-  color: antiquewhite;
+  background-color: rgb(62, 13, 13);
+
   padding: 10px;
 }
 .container {
@@ -16,9 +17,8 @@
   right: 0;
   left: 0;
   overflow: scroll;
-
-  text-align: center;
   font-family: "Jura", sans-serif;
+  text-align: center;
 }
 .thefooter {
   align-items: center;
@@ -29,7 +29,35 @@
 .navlinks {
   text-decoration: none;
 }
-.winnings{
-    font-size: 2rem;
-    color:chocolate;
+.winnings {
+  font-size: 2rem;
+  color: rgb(82, 46, 21);
+  padding-top:50px;
+  text-Shadow:2px 2px 4px grey;
+}
+.lobo {
+  animation: flicker 1.5s infinite alternate;
+  color: #fff;
+  font-weight: 900;
+  font-family: "Dancing Script", cursive;
+}
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff,
+      0 0 40px rgb(255, 0, 179), 0 0 80px rgb(238, 0, 255),
+      0 0 90px rgb(247, 0, 255), 0 0 100px rgb(204, 0, 255),
+      0 0 150px rgb(191, 0, 255);
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
 }
