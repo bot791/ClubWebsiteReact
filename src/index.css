@@ -1,13 +1,35 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap");
+.navbar {
+  display: flex;
+  margin-left: auto;
+  justify-content: space-between;
+  align-items: center;
+  background-color: darkgray;
+  color: antiquewhite;
+  padding: 10px;
 }
+.container {
+  background-color: rgb(206, 200, 21);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: scroll;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  text-align: center;
+  font-family: "Jura", sans-serif;
+}
+.thefooter {
+  align-items: center;
+}
+* {
+  box-sizing: border-box;
+}
+.navlinks {
+  text-decoration: none;
+}
+.winnings{
+    font-size: 2rem;
+    color:chocolate;
 }

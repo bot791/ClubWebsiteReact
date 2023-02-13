@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./Navbar";
+import Winnings from "./Winnings";
+import Players from "./Players";
+import {BrowserRouter as Router,Route,Routes} from "react-router-dom";
+import About from "./About";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = ()=> {
+  return (<div className="container">
+    <Router>
+      <div >
+        <Navbar/>
+        <div className="content">
+          <Routes>
+          <Route exact path="/" element={<About/>} />
+          <Route exact path="/Players" element={<Players/>} />
+          <Route exact path="/Winnings" element={<Winnings/>} /> 
+          </Routes>
+        </div>
+        <div className="thefooter"><p>Copyright © EL CLUB DEL LOBOS</p></div>
+      </div>
+    </Router>
     </div>
   );
 }
