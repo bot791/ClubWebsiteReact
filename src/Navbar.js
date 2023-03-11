@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <h1 className="lobo">El Club Del Lobos</h1>
+      <h1 className="lobo">El Club Del Lobo</h1>
       <div className="links">
         <Link
           style={{ textDecoration: "none", padding: "10px", fontWeight: "900",color:"yellow" }}
@@ -21,6 +21,12 @@ const Navbar = () => {
           to="/Players"
         >
           1st Team
+        </Link>
+        <Link
+          style={{ textDecoration: "none", padding: "10px", fontWeight: "900" ,color:"yellow"}}
+          to="/Playerstwo"
+        >
+          2nd Team
         </Link>
         <Link
           style={{ textDecoration: "none", padding: "10px", fontWeight: "900" ,color:"yellow"}}
