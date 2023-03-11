@@ -28,7 +28,7 @@ const Playerstwo = () => {
         </dd>
         <dt>CENTRAL DEFENDER/GOALKEEPER</dt>
         <dd style={{ color: "#2f4f4f", textShadow: "2px 2px 4px grey" }}>
-          <h1>Subhasish Dutta</h1>
+          <h1>Subasish Dutta</h1>
         </dd>
       </dl>
     </div>
